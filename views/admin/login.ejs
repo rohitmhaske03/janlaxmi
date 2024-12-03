@@ -1,0 +1,32 @@
+<%- include("navbar.ejs") %>
+    <div>
+        <h1 style="text-align: center;">Janalaxmi Co-operative Bank Ltd.</h1>
+    </div>
+
+    <form action="/admin/do_login" method="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-md-6 mt-5">
+                    <div style="border: 1px solid black; padding: 20px;text-align: center;">
+                        <br>
+                        <h3>Admin Login</h3>
+                        <br>
+                        <p style="margin: 0%; padding: 0%;text-align: left;font-weight: 700;">User Id :</p>
+                        <input type="text" name="admin_user_id" class="form-control" style="width: 100%;">
+                        <br>
+                        <p style="margin: 0%; padding: 0%;text-align: left;font-weight: 700;">Password :</p>
+                        <input type="password" name="admin_password" class="form-control" style="width: 100%;">
+                        <br>
+                        <button class="btn btn-primary btn-lg">Login</button>
+                        <br><br>
+                        <p style="text-align: left;">Change Password : <a href="/admin/update_password">Click Here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <br><br>
+
+    <%- include('footer.ejs') %>
+        <!-- CREATE TABLE admin_login(admin_login_id INT PRIMARY KEY AUTO_INCREMENT, admin_user_id VARCHAR(100),admin_mobile VARCHAR(100),admin_email VARCHAR(100), admin_password VARCHAR(100)) -->

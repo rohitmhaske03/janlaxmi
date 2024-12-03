@@ -1,0 +1,100 @@
+<%- include("navbar.ejs") %>
+
+<div class="container-fluid bg-white p-2">
+    <div class="row">
+        <div class="mb-3 col-md-12">
+          <h3>Enquery Details</h3>
+        </div>
+<hr>
+       <table class="table table-border table-stripped table-hover">
+        <tr>
+            <th>action</th>
+            <th>Sr</th>
+            <th>Enquiry Type</th>
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            <th>Date</th>
+            <th>Time</th>
+        </tr>
+        <% for(var i=0;i<enquirys.length;i++) {  
+                
+            
+            
+        %>
+            <tr>
+                <td>
+                    <a href="complete_enquiry/<%-enquirys[i].enquiry_id%>">
+                        <button class="btn btn-primary">Complete</button>
+                    </a>
+                </td>
+                <th><%-i+1%></th>
+                <th><%- enquirys[i].enquiry_type%></th>
+                <th><%- enquirys[i].name_of_enquired%></th>
+                <th><%- enquirys[i].mobile_of_enquired%></th>
+                <th><%- enquirys[i].email_of_enquired%></th>
+                <th>
+                    <%- enquirys[i].currentdate%><br>
+                
+                </th>
+                <th><%- enquirys[i].currenttime%></th>
+            </tr>
+        <% } %>
+       </table>
+
+    </div>
+</div>
+<hr>
+
+
+<div class="container-fluid bg-white p-2" style="margin-top: 30px;">
+    <div class="row">
+        <div class="mb-3 col-md-12 pt-2 mb-2 text-center">
+          <h3>Service Enquery Details</h3><hr>
+        </div><hr >
+        <% for(var i=0;i<s_enquirys.length;i++) {     %>
+        <div class="col-12 col-md-6 col-lg-6 " style="float: left; ">
+            <div class="card p-3" style="background-color: lightblue;">
+               
+
+                
+                <!-- Card Content -->
+            <h5 style="margin-bottom: 5px; text-align: center;">   Enquiry Type :<span style="margin-bottom: 5px;"> <%-s_enquirys[i].service_title%></span></h5><br>
+                
+            <h5 style="margin-bottom: 5px;"> Name :<span style="margin-bottom: 5px;"> <%-s_enquirys[i].name%></span></h5>     
+            <h5 style="margin-bottom: 5px;">Email :<span style="margin-bottom: 5px;"> <%-s_enquirys[i].email%></span></h5>
+            <h5 style="margin-bottom: 5px;">Mobile :<span style="margin-bottom: 5px;"> <%-s_enquirys[i].phone%></span></h5>
+            <h5 style="margin-bottom: 15px;margin-top: 10px;">   Message :<span style="margin-bottom: 5px;"> <%-s_enquirys[i].information%></span></h5>
+            <h5 style="margin-bottom: 5px;">   Date :<span style="margin-bottom: 5px;"> <%-s_enquirys[i].currentdate%></span></h5>
+            <h5 style="margin-bottom: 5px;">   Time :<span style="margin-bottom: 5px;"> <%-s_enquirys[i].currenttime%></span></h5>
+
+                <div class="text-center" >
+                    <a href="complete_service_enquiry/<%-s_enquirys[i].service_enquiry_id%>">
+                        <button class="btn btn-primary" >Complete</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <% } %>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("footer.ejs") %>
+
+
+
+
+
+

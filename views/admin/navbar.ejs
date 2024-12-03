@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Dashboard</title>
+
+
+    <!-- Fontfaces CSS-->
+    <link href="/admin_files/css/font-face.css" rel="stylesheet" media="all">
+    <link href="/admin_files/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="/admin_files/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="/admin_files/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="/admin_files/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Vendor CSS-->
+    <link href="/admin_files/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="/admin_files/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="/admin_files/vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="/admin_files/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="/admin_files/vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="/admin_files/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="/admin_files/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <script src="https://kit.fontawesome.com/a14473b155.js" crossorigin="anonymous"></script>
+
+    <!-- Main CSS-->
+    <link href="/admin_files/css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body >
+    <% if(is_login) { %>
+
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <!-- <header class="header-mobile d-block d-lg-none">
+            <div class="header-mobile__bar">
+                <div class="container-fluid mb-2">
+                    <div class="header-mobile-inner mb-2">
+                        <a class="logo" href="/admin">
+                            <img src="/uploads/company_logo.jpeg" 
+                            alt="" style="height: 70px;width: 90px;" />
+                        </a>
+                        <button class="hamburger hamburger--slider" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li class="has-sub">
+                            <a class="js-arrow" href="/admin">
+                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                        </li>
+                        <li class="border-top">
+                            <a href="/admin/about_company">
+                                <i class="fas fa-industry"></i>About Company</a>
+                        </li>
+                        <li class="has-sub border-top">
+                            <a class="js-arrow" href="#" >
+                                <i class="fas fa-copy"></i>Pages
+                                <i class=" fa fa-angle-down d-inline-block mt-2 float-right"></i>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="/admin/enquiry">Enquiry Form</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us Form</a>
+                                </li>
+                                <li>
+                                    <a href="#">Customer Support Form</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </header> -->
+        <!-- END HEADER MOBILE-->
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo" style="height: 100px;width: 300px;">
+                <a href="/admin/home">
+                    <img src="/uploads/company_logo.jpeg"
+                     alt="" style="height: 70px;width: 200px; float: left;" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                       
+                        <li class="">
+                            <a href="/admin/home">
+                                <i class="fas fa-industry"></i>Dashboard
+                            </a>
+                        </li>
+
+                        <li class="border-top">
+                            <a href="/admin/team">
+                                <i class="fas fa-tachometer-alt"></i>Our Team</a>
+                        </li>
+                       
+
+
+                        <li class="border-top">
+                            <a href="/admin/about_company">
+                                <i class="fas fa-industry"></i>About Company</a>
+                        </li>
+                        <!-- <li class="border-top">
+                            <a href="/admin/enquiry">
+                                <i class="fas fa-industry"></i>Enquiry</a>
+                        </li> -->
+                        
+                        <li class="has-sub border-top ">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-copy"></i>Home Pages
+                                <i class=" fa fa-angle-down d-inline-block mt-2 float-right"></i>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list  ">
+                                <li >
+                                    <a href="/admin/home_about_us_info">About Us Info</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/top_slider">Top Slider</a>
+                                    
+                                </li>
+                                <li >
+                                    <a href="/admin/home_our_service">Home Our Service</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/home_facility_provide">Home Facility Provide</a>
+                                </li>
+                                <li >
+                                    <a href="#">Contact Us Form</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/customer_support">Customer Support Form</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/feature">Features</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/eligibility">Eligiblity</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/document">Document</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/video">Videos</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/bank_partner">Bank Partner</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/footer">Footer Part</a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        
+
+                        <li class="has-sub border-top ">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-copy"></i>About Pages
+                                <i class=" fa fa-angle-down d-inline-block mt-2 float-right"></i>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list  ">
+                                <li >
+                                    <a href="/admin/about_organization">About Info</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/add_about_branch">Add Branch </a>
+                                </li>
+                                <li >
+                                    <a href="/admin/about_our_vision">Our Vision </a>
+                                </li>
+                                <li >
+                                    <a href="/admin/about_our_History">Our History </a>
+                                </li>
+                                <li >
+                                    <a href="/admin/about_our_mission">Our Mission </a>
+                                </li>
+                                <li >
+                                    <a href="/admin/get_in_touch">Get In Touch </a>
+                                </li>
+                                <li >
+                                    <a href="/admin/happy_customer">Happy Customer Review </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-sub border-top">
+                            <a class="js-arrow" href="/admin/add_loan">
+                                <i class="fas fa-copy"></i>Deposit Pages
+                            <i class="fa fa-angle-down d-inline-block mt-2 float-right"></i>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="/admin/deposit_schemes_page">Deposit Schemes Page</a>
+                                </li>
+                                <li>
+                                    <a href="/admin/current_deposit_scheme_page">Current Deposit Scheme Page</a>
+                                </li>
+                                
+                                <li>
+                                    <a href="/admin/term_deposit_scheme">Term Deposit Scheme Page</a>
+                                </li>
+
+                                <li>
+                                    <a href="/admin/daily_deposit_scheme_page">Daily Deposit Scheme Page</a>
+                                </li>
+
+                                <li>
+                                    <a href="/admin/saving_deposit_scheme">Savings Deposit Scheme Page</a>
+                                </li>
+
+                                <li>
+                                    <a href="/admin/fixed_deposit_scheme_page">Fixed Deposit Scheme Page</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+
+
+                        <li class="has-sub border-top ">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-copy"></i>Chairman Pages
+                                <i class=" fa fa-angle-down d-inline-block mt-2 float-right"></i>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list  ">
+                                <li >
+                                    <a href="/admin/chairman_slider">Chairman slider</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/chairman_decription">Chairman Detail </a>
+                                </li>
+                                <li >
+                                    <a href="/admin/chairman_gallery">Chairman Gallery </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <li class="has-sub border-top ">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-copy"></i>Service Pages
+                                <i class=" fa fa-angle-down d-inline-block mt-2 float-right"></i>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list  ">
+                                <li >
+                                    <a href="/admin/service_info">Services Info</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/add_service">Add Services </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub border-top ">
+                            <a class="js-arrow" href="#">
+                                <i class="fas fa-copy"></i>Notice Pages
+                                <i class=" fa fa-angle-down d-inline-block mt-2 float-right"></i>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list  ">
+                                <li >
+                                    <a href="/admin/notice_info">Notice Page Info</a>
+                                </li>
+                                <li >
+                                    <a href="/admin/add_Notice">Add Notice </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        
+                        <li class="has-sub border-top">
+                            <a class="js-arrow" href="/admin/add_loan">
+                                <i class="fas fa-copy"></i>Loan Pages
+                            <i class="fa fa-angle-down d-inline-block mt-2 float-right"></i>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="/admin/add_loan">Add Loan</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="/admin/loan_list">Loan List</a>
+                                </li> -->
+                                <li>
+                                    <a href="/admin/loan_docs_apps">Add Documents And Applications</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="border-top">
+                            <a href="/admin/gallery_info">
+                                <i class="fa-solid fa-photo-film"></i>Gallery Info
+                            </a>
+                        </li>
+
+                        <li class="has-sub border-top">
+                            <a class="js-arrow" href="#">
+                                <i class="fa-solid fa-headset"></i>Enquires
+                            <i class="fa fa-angle-down d-inline-block mt-2 float-right"></i>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="/admin/enquiry">Home Page Enquiry List</a>
+                                </li>
+                                <li>
+                                    <a href="/admin/loan_enquiry">Loan Enquiry List</a>
+                                </li>
+                                <li>
+                                    <a href="/admin/contact_enquiry">Contact Us Enquiry List</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="has-sub border-top">
+                            <a class="js-arrow" href="">
+                                <i class="fa-sharp-duotone fa-solid fa-temperature-arrow-up"></i>Term & Condtions
+                            <i class="fa fa-angle-down d-inline-block mt-2 float-right"></i>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li class="border-top">
+                                    <a href="/admin/term_&_condition">
+                                        <i class="fa-sharp-duotone fa-solid fa-temperature-arrow-up"></i>Terms & Conditions
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="has-sub border-top">
+                            <a class="js-arrow" href="#">
+                                <i class="fa-solid fa-headset"></i>FAQ Pages
+                            <i class="fa fa-angle-down d-inline-block mt-2 float-right"></i>
+                            </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="/admin/faq">Add FAQ Questions And Answers</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+
+                        
+                        
+                        <li class="border-top">
+                            <a href="#">
+                                <i class="fas fa-industry"></i>Pages
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+                            <form class="form-header" action="" method="POST">
+                            </form>
+                            <div class="header-button">
+                                <div class="noti-wrap">
+                                </div>
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <div class="image">
+                                            <img src="/uploads/company_logo.jpeg" alt="" />
+                                        </div>
+                                        <div class="content">
+                                            <a class="js-acc-btn" href="/admin/profile">Janlakshmi Multistate</a>
+                                        </div>
+                                        <div class="account-dropdown js-dropdown">
+                                            <div class="info clearfix">
+                                                <div class="image">
+                                                    <a href="#">
+                                                        <img src="/uploads/company_logo.jpeg" alt="" />
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <h5 class="name">
+                                                        <a href="/admin/home">Janlakshmi Multistate</a>
+                                                    </h5>
+                                                    <span class="email">janlakshmi@gmail.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__body">
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-account"></i>Account</a>
+                                                </div>
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-settings"></i>Setting</a>
+                                                </div>
+                                                <div class="account-dropdown__item">
+                                                    <a href="#">
+                                                        <i class="zmdi zmdi-money-box"></i>Billing</a>
+                                                </div>
+                                            </div>
+                                            <div class="account-dropdown__footer">
+                                                <a href="/admin/logout">
+                                                    <i class="zmdi zmdi-power"></i>Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <% } %>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
